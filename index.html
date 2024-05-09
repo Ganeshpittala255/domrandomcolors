@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="d1">
+            <button id="btn1">clickme</button><br><br>
+        </div>
+       
+    <script>
+        function generateRandomColor() {
+  var red = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+return 'rgb(' + red + ',' + green + ',' + blue + ')';
+       }
+
+function div(){
+let getdiv1=document.getElementById("d1")
+            getdiv1.style.height="100vh"
+            getdiv1.style.width="100%"
+            getdiv1.style.border="2px solid pink"
+            getdiv1.style.borderRadius="10%"
+            getdiv1.style.boxShadow="0px 3px 5px 10px black"
+            getdiv1.style.backgroundColor=generateRandomColor() 
+       }
+
+
+       
+ let getbtn=document.getElementById("btn1")
+       getbtn.style.color="gray"
+       getbtn.style.height="100px"
+       getbtn.style.width="200px"
+       getbtn.style.fontSize="50px"
+       getbtn.style.margin="400px"
+       getbtn.style.marginLeft="400px"
+       getbtn.style.boxShadow="0px 2px 3px 5px black"
+       getbtn.style.borderRadius="20px"
+    getbtn.addEventListener('click', div)
+
+    
+
+
+    
+
+ 
+</script>
+</body>
+</html>
